@@ -1,0 +1,20 @@
+/* 
+    Document   : test
+    Created on : Dec 5, 2012, 8:46:49 PM
+    Author     : Admin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+box01 {
+    
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
