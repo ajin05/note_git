@@ -1,20 +1,43 @@
-/* 
-    Document   : test
-    Created on : Dec 5, 2012, 8:46:49 PM
-    Author     : Admin
-    Description:
-        Purpose of the stylesheet follows.
-*/
+/* set the image to use and establish the lower-right position */
+    .cssbox, .cssbox_body, .cssbox_head, .cssbox_head h2{
+      background: transparent url(img.php.png) no-repeat bottom right}
+    .cssbox{
+    /* intended total box width - padding-right(next) */
+      width:335px !important; /* IE Win = width - padding */
+      width: 320px; 
+    /* the gap on the right edge of the image (not content padding) */
+      padding-right:15px; /* use to position the box */
+      margin:20px auto}
 
-root { 
-    display: block;
-}
-box01 {
+    /* set the top-right image */
+    .cssbox_head{background-position:top right;
+    /* pull the right image over on top of border */
+      margin-right:-15px; 
+    /* right-image-gap + right-inside padding */
+      padding-right:40px}
+
+    /* set the top-left image */
+    .cssbox_head h2{
+      background-position:top left;
+      margin:0; /* reset main site styles*/ 
+      border:0; /* ditto */
+    /* padding-left = image gap + interior padding ... no padding-right */
+      padding:25px 0 15px 40px; 
+      height:auto !important;
+      height:1%} /* IE Holly Hack */
+
+    /* set the lower-left corner image */
+    .cssbox_body{
+      background-position:bottom left;
+      margin-right:25px; /* interior-padding right */ 
+      padding:15px 0 15px 40px} /* mirror .cssbox_head right/left */
     
-}
-
-.shadow {
-  -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
+    .clean-gray{
+        display: none;
+border:solid 1px #000000; 
+background:#EFEFEF;
+color:#222222;
+padding:4px;
+text-align:center;
+width:200px
 }

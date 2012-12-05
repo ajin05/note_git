@@ -12,13 +12,17 @@ and open the template in the editor.
         <script>
              $(document).ready(function(){
                 // Your code here
-                
+                $('#but').click(function(){
+                    $('.clean-gray').toggle();
+                })
                 });
         </script>
     </head>
     
     <body>
-        <div id="box01" class="shadow">TODO write content</div>
-        <div id="box02"></div>
+        <button id="but">Nut nhấn</button>
+        
+        <div class="clean-gray">Clean message box</div>
+        
     </body>
 </html>
